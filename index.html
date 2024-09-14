@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing page for the Agriculture Project">
+    <title>PointaFam</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Background image styling for the landing section */
+        .hero-section {
+            background: url('images/gallery-img-02.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-content a {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
+
+        /* Navigation bar */
+        nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        /* Logo styling */
+        .logo img {
+            height: 50px;
+        }
+
+               /* Features Section */
+               .features-section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .features-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        .feature {
+            display: flex;
+            flex-wrap: wrap; /* Ensures the layout is responsive */
+            margin-bottom: 40px;
+            justify-content: center;
+        }
+
+        .feature img {
+            width: 150px; /* Set a fixed width for icons */
+            height: 150px; /* Set a fixed height for icons */
+            object-fit: contain; /* Ensures the images maintain their aspect ratio */
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .feature .feature-content {
+            max-width: 500px;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .feature .feature-content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .feature .feature-content p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 50px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .about-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .about-section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .team-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .team-links a {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        /* Footer with repository link */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #28a745;
+            color: white;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <a href="#">
+                <img src="images/PointaFAM (1).png" alt="PointaFam Logo">
+            </a>
+        </div>
+        <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>PointaFam</h1>
+            <p>Connecting Farmers with Retailers for a Sustainable Future</p>
+            <a href="https://yourdeployedproject.com">Visit Our Application</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <h2>Key Features</h2>
+
+        <div class="feature">
+            <img src="images/marketing_17068036 (1).png" alt="Feature 1">
+            <div class="feature-content">
+                <h3>Feature 1: Seamless Marketplace</h3>
+                <p>Farmers can easily list their products, and retailers can browse and purchase produce in real time, enhancing the local economy and reducing waste.</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <img src="images/efficiency_4482095 (1).png" alt="Feature 2">
+            <div class="feature-content">
+                <h3>Feature 2: Real-Time Analytics</h3>
+                <p>Our platform provides real-time data insights, helping farmers and retailers make better decisions based on demand, pricing trends, and more.</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <img src="images/chat_769237 (1).png" alt="Feature 3">
+            <div class="feature-content">
+                <h3>Feature 3: Direct Communication</h3>
+                <p>Direct messaging enables farmers and retailers to negotiate, form partnerships, and ensure seamless transactions without third-party intervention.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About PointaFam</h2>
+        <p>PointaFam is inspired by a need to bridge the gap between farmers in rural areas and urban retailers. We realized that connecting these two parties directly not only boosts local economies but also promotes sustainability. This platform is developed as a portfolio project for Holberton School, with the goal of fostering innovation in agriculture.</p>
+       
+
+        <div class="team-links">
+            <a href="https://linkedin.com/in/ferdynand-odhiambo" target="_blank">LinkedIn</a>
+            <a href="https://github.com/MeFerdi" target="_blank">GitHub</a>
+            <a href="https://twitter.com/FerdinandOdhis7" target="_blank">Twitter</a>
+        </div>
+
+        <p>Check out our project on GitHub:</p>
+        <a href="https://github.com/MeFerdi/pointafam_capstone.git" target="_blank">GitHub Repository</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 PointaFam - All Rights Reserved | <a href="" target="_blank">GitHub Repo</a></p>
+    </footer>
+
+</body>
+
+</html>
+   
