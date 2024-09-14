@@ -7,163 +7,235 @@
     <meta name="description" content="Landing page for the Agriculture Project">
     <title>PointaFam</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
 
-        /* Background image styling for the landing section */
-        .hero-section {
-            background: url('images/gallery-img-02.jpg') no-repeat center center/cover;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-        }
+/* Background image styling for the landing section */
+.hero-section {
+    background: url('images/gallery-img-02.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
 
-        .hero-content h1 {
-            font-size: 4rem;
-            margin-bottom: 10px;
-        }
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
 
-        .hero-content p {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-        }
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
 
-        .hero-content a {
-            padding: 10px 20px;
-            background-color: #28a745;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2rem;
-        }
+.hero-content a {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
 
-        /* Navigation bar */
-        nav {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+/* Navigation bar */
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
 
-        nav ul li {
-            margin-right: 20px;
-        }
+nav ul li {
+    margin-right: 20px;
+}
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.2rem;
-        }
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
 
-        /* Logo styling */
-        .logo img {
-            height: 50px;
-        }
+/* Logo styling */
+.logo img {
+    height: 50px;
+}
 
-               /* Features Section */
-               .features-section {
-            padding: 50px;
-            text-align: center;
-        }
+/* Features Section */
+.features-section {
+    padding: 50px;
+    text-align: center;
+}
 
-        .features-section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 40px;
-        }
+.features-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
 
-        .feature {
-            display: flex;
-            flex-wrap: wrap; /* Ensures the layout is responsive */
-            margin-bottom: 40px;
-            justify-content: center;
-        }
+.feature {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of elements */
+    align-items: center;
+    margin-bottom: 40px;
+}
 
-        .feature img {
-            width: 150px; /* Set a fixed width for icons */
-            height: 150px; /* Set a fixed height for icons */
-            object-fit: contain; /* Ensures the images maintain their aspect ratio */
-            margin-right: 20px;
-            border-radius: 10px;
-        }
+.feature img {
+    width: 100%;
+    max-width: 400px; /* Constrain image size */
+    border-radius: 10px;
+}
 
-        .feature .feature-content {
-            max-width: 500px;
-            padding: 20px;
-            text-align: left;
-        }
+.feature .feature-content {
+    padding: 20px;
+    text-align: center;
+    flex: 1; /* Allow content to grow/shrink as needed */
+}
 
-        .feature .feature-content h3 {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-        }
+.feature .feature-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
 
-        .feature .feature-content p {
-            font-size: 1rem;
-            line-height: 1.5;
-        }
+.feature .feature-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
 
-        /* About Section */
-        .about-section {
-            padding: 50px;
-            background-color: #f9f9f9;
-            text-align: center;
-        }
+/* About Section */
+.about-section {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
 
-        .about-section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-        }
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
 
-        .about-section p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
 
-        .team-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
+.team-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 
-        .team-links a {
-            color: #333;
-            text-decoration: none;
-            font-size: 1.2rem;
-        }
+.team-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
 
-        /* Footer with repository link */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #28a745;
-            color: white;
-        }
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #28a745;
+    color: white;
+}
 
-        footer a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .hero-content a {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .feature {
+        flex-direction: column;
+    }
+
+    .feature img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-content a {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+
+    .features-section h2 {
+        font-size: 2rem;
+    }
+
+    .feature .feature-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .feature .feature-content p {
+        font-size: 0.9rem;
+    }
+
+    .about-section h2 {
+        font-size: 2rem;
+    }
+
+    .about-section p {
+        font-size: 1rem;
+    }
+
+    .team-links a {
+        font-size: 1rem;
+    }
+}
+
+
     </style>
 </head>
 
@@ -187,7 +259,7 @@
         <div class="hero-content">
             <h1>PointaFam</h1>
             <p>Connecting Farmers with Retailers for a Sustainable Future</p>
-            <a href="https://yourdeployedproject.com">Visit Our Application</a>
+            <a href="https://pointafam.com">Visit Our Application</a>
         </div>
     </section>
 
